@@ -108,7 +108,59 @@ SmartDine is designed to be **simple enough for any restaurant owner** to use wi
 
 ---
 
+## 🏗️ System Architecture
+
+SmartDine follows a **3-tier client-server architecture** with a decoupled frontend and backend, connected through a RESTful API.
+
+```mermaid
+flowchart TD
+    User(("👤 Restaurant Owner\n(Browser)"))
+
+    subgraph Frontend ["☁️ Vercel — Frontend"]
+        React["⚛️ React 19 + Vite\nTailwind CSS + Recharts"]
+    end
+
+    subgraph Backend ["☁️ Render — Backend"]
+        Flask["🐍 Flask REST API\nGunicorn WSGI Server"]
+        Auth["🔐 JWT Auth\nMiddleware"]
+        ML["🤖 ML Engine\nscikit-learn + pandas"]
+        Routes["📡 API Routes\n/api/*"]
+    end
+
+    subgraph Database ["☁️ Neon — Database"]
+        PG["🐘 PostgreSQL 18\nCloud Managed DB"]
+    end
+
+    subgraph External ["📧 External Services"]
+        SMTP["Gmail SMTP\nEmail Notifications"]
+    end
+
+    User -->|HTTPS Requests| React
+    React -->|REST API calls + JWT| Flask
+    Flask --> Auth
+    Auth --> Routes
+    Routes --> ML
+    Routes -->|SQLAlchemy ORM| PG
+    Routes -->|Low Stock Alerts| SMTP
+    ML -->|Read Sales History| PG
+```
+
+### Architecture Layers
+
+| Layer | Technology | Responsibility |
+|-------|-----------|----------------|
+| **Presentation** | React 19 + Vite + Tailwind | UI rendering, routing, state management |
+| **API Gateway** | Flask + Gunicorn | Request handling, JWT validation, business logic |
+| **ML Engine** | scikit-learn + pandas + NumPy | Demand forecasting, smart recommendations |
+| **Data** | PostgreSQL 18 (Neon) | Persistent storage for all app data |
+| **Auth** | JWT (PyJWT) | Stateless token-based authentication |
+| **Notification** | Gmail SMTP | Low-stock email alerts |
+| **Hosting** | Vercel + Render + Neon | Frontend + Backend + Database cloud deployment |
+
+---
+
 ## 📁 Project Structure
+
 
 ```
 SmartDine/
