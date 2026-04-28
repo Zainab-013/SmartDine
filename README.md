@@ -13,7 +13,7 @@
 
 *Empowering restaurants with intelligent insights, AI-driven forecasting, and seamless operations — all in one platform.*
 
-[🚀 Live Demo](#-live-demo) • [✨ Features](#-features) • [🛠️ Tech Stack](#️-tech-stack) • [⚡ Quick Start](#-quick-start) • [📡 API Reference](#-api-reference) • [☁️ Deployment](#️-deployment)
+[🚀 Live Demo](#-live-demo) • [✨ Features](#-features) • [🛠️ Tech Stack](#️-tech-stack) • [📡 API Reference](#-api-reference) • [☁️ Deployment](#️-deployment)
 
 ---
 
@@ -125,71 +125,6 @@ SmartDine/
             ├── SettingsPage.jsx
             └── auth/AuthPages.jsx
 ```
-
----
-
-## ⚡ Quick Start
-
-### Prerequisites
-- Python 3.10+
-- Node.js 18+
-- PostgreSQL 18
-- Git
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/Zainab-013/SmartDine.git
-cd SmartDine
-```
-
-### 2. Backend Setup
-
-```bash
-cd backend
-
-# Create and activate virtual environment
-python -m venv venv
-venv\Scripts\activate        # Windows
-# source venv/bin/activate   # Mac/Linux
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Setup environment variables
-cp .env.example .env
-# Edit .env with your database credentials
-
-# Run the backend
-python app.py
-# Backend runs at: http://localhost:5000
-```
-
-### 3. Frontend Setup
-
-```bash
-cd frontend
-
-# Install dependencies
-npm install
-
-# Create environment file
-echo "VITE_API_BASE_URL=http://127.0.0.1:5000" > .env
-
-# Start dev server
-npm run dev
-# Frontend runs at: http://localhost:5173
-```
-
-### 4. Database Setup
-
-Create a PostgreSQL database and update your `.env`:
-
-```env
-DATABASE_URL=postgresql://postgres:yourpassword@localhost:5432/smart_restaurant_ai
-```
-
-The app auto-creates all tables on first run via `db.create_all()`.
 
 ---
 
