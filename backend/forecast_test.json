@@ -1,0 +1,113 @@
+﻿[
+  {
+    "accuracy": "0%",
+    "actual": 0,
+    "avgOrder": "\u20b9350",
+    "dish": "Butter Chicken",
+    "id": 4,
+    "image": "/static/uploads/placeholder.jpg",
+    "peakTime": "7-9 PM",
+    "predicted": 1,
+    "trend": "+12%"
+  },
+  {
+    "accuracy": "0%",
+    "actual": 0,
+    "avgOrder": "\u20b9280",
+    "dish": "Paneer Tikka",
+    "id": 5,
+    "image": "/static/uploads/placeholder.jpg",
+    "peakTime": "7-9 PM",
+    "predicted": 1,
+    "trend": "+12%"
+  },
+  {
+    "accuracy": "0%",
+    "actual": 0,
+    "avgOrder": "\u20b9400",
+    "dish": "Hyderabadi Biryani",
+    "id": 6,
+    "image": "/static/uploads/placeholder.jpg",
+    "peakTime": "7-9 PM",
+    "predicted": 1,
+    "trend": "+12%"
+  },
+  {
+    "accuracy": "0%",
+    "actual": 0,
+    "avgOrder": "\u20b9200",
+    "dish": "Dal Makhani",
+    "id": 7,
+    "image": "/static/uploads/placeholder.jpg",
+    "peakTime": "7-9 PM",
+    "predicted": 1,
+    "trend": "+12%"
+  },
+  {
+    "accuracy": "0%",
+    "actual": 0,
+    "avgOrder": "\u20b9150",
+    "dish": "Masala Dosa",
+    "id": 8,
+    "image": "/static/uploads/placeholder.jpg",
+    "peakTime": "7-9 PM",
+    "predicted": 1,
+    "trend": "+12%"
+  },
+  {
+    "accuracy": "0%",
+    "actual": 0,
+    "avgOrder": "\u20b9300",
+    "dish": "Chicken Tikka",
+    "id": 9,
+    "image": "/static/uploads/placeholder.jpg",
+    "peakTime": "7-9 PM",
+    "predicted": 1,
+    "trend": "+12%"
+  },
+  {
+    "accuracy": "0%",
+    "actual": 0,
+    "avgOrder": "\u20b9300",
+    "dish": "Pasta Alfredo",
+    "id": 10,
+    "image": "/static/uploads/placeholder.jpg",
+    "peakTime": "7-9 PM",
+    "predicted": 1,
+    "trend": "+12%"
+  },
+  {
+    "accuracy": "0%",
+    "actual": 0,
+    "avgOrder": "\u20b9180",
+    "dish": "Veg Fried Rice",
+    "id": 11,
+    "image": "/static/uploads/placeholder.jpg",
+    "peakTime": "7-9 PM",
+    "predicted": 1,
+    "trend": "+12%"
+  },
+  {
+    "accuracy": "0%",
+    "actual": 0,
+    "avgOrder": "\u20b9250",
+    "dish": "Chocolate Lava Cake",
+    "id": 12,
+    "image": "/static/uploads/placeholder.jpg",
+    "peakTime": "7-9 PM",
+    "predicted": 1,
+    "trend": "+12%"
+  },
+  {
+    "accuracy": "0%",
+    "actual": 0,
+    "avgOrder": "\u20b9120",
+    "dish": "Mango Lassi",
+    "id": 13,
+    "image": "/static/uploads/placeholder.jpg",
+    "peakTime": "7-9 PM",
+    "predicted": 1,
+    "trend": "+12%"
+  }
+]
+

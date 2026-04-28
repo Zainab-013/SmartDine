@@ -1,0 +1,64 @@
+# ─────────────────────────────────────────────────────────────────
+#  ADD THESE TWO MODELS TO YOUR EXISTING models.py
+#  (keep all your existing models; just paste these at the bottom)
+# ─────────────────────────────────────────────────────────────────
+
+from database import db
+from datetime import datetime
+
+
+class Recipe(db.Model):
+    """One row per ingredient per dish.
+    e.g. Butter Chicken -> Chicken 300g, Cream 100ml, ...
+    """
+    __tablename__ = 'recipes'
+
+    id = db.Column(db.Integer, primary_key=True)
+    dish_id = db.Column(db.Integer, db.ForeignKey('dishes.id', ondelete='CASCADE'), nullable=False)
+    ingredient_name = db.Column(db.String(120), nullable=False)
+    quantity_required = db.Column(db.Float, nullable=False, default=0)
+    unit = db.Column(db.String(20), default='')
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "dish_id": self.dish_id,
+            "ingredient_name": self.ingredient_name,
+            "quantity_required": self.quantity_required,
+            "unit": self.unit
+        }
+
+
+class Ngodonation(db.Model):
+    """Tracks unsold food donated to NGOs."""
+    __tablename__ = 'ngo_donations'
+
+    id = db.Column(db.Integer, primary_key=True)
+    dish_name = db.Column(db.String(120), nullable=False)
+    quantity = db.Column(db.Integer, default=1)
+    unit = db.Column(db.String(30), default='plates')
+    ngo_name = db.Column(db.String(200), default='')
+    notes = db.Column(db.Text, default='')
+    donation_date = db.Column(db.String(20), default='')
+    donated_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "dish_name": self.dish_name,
+            "quantity": self.quantity,
+            "unit": self.unit,
+            "ngo_name": self.ngo_name,
+            "notes": self.notes,
+            "donation_date": self.donation_date,
+            "donated_at": self.donated_at.strftime("%d %b %Y, %I:%M %p")
+        }
+
+
+# ─────────────────────────────────────────────────────────────────
+#  Also add `recipe_items` back-ref to your existing Dish model:
+#
+#  class Dish(db.Model):
+#      ...
+#
+# ─────────────────────────────────────────────────────────────────
