@@ -42,7 +42,7 @@ There is a clear need for an **affordable, all-in-one intelligent platform** tha
 
 ---
 
-## ✅ Our Solution
+## ✅ My Solution
 
 **SmartDine** solves all of the above by providing:
 
