@@ -27,6 +27,40 @@
 
 ---
 
+## ❗ Problem Statement
+
+Restaurant owners — especially small and medium-sized businesses — face critical day-to-day challenges:
+
+- 📉 **No visibility** into sales trends or peak demand periods
+- 🗑️ **Food waste** due to over-purchasing and poor inventory tracking
+- 📋 **Manual billing** errors and slow order management
+- 🤷 **No data-driven decisions** — menus are managed by guesswork, not insights
+- 💸 **Profit leakage** from untracked expenses and unoptimized pricing
+- 🔔 **No real-time alerts** when ingredients run out mid-service
+
+There is a clear need for an **affordable, all-in-one intelligent platform** that gives restaurant owners the tools that were previously only available to large restaurant chains.
+
+---
+
+## ✅ Our Solution
+
+**SmartDine** solves all of the above by providing:
+
+| Problem | SmartDine Solution |
+|---------|-------------------|
+| No sales visibility | Real-time **Dashboard** with KPIs and trend charts |
+| Food waste | **Inventory Management** with auto-deduction on orders |
+| Manual billing errors | Digital **Billing & Sales** with order tracking |
+| Guesswork-based menus | **AI Recommendations** powered by sales pattern analysis |
+| Unknown future demand | **ML-based Forecasting** using historical sales data |
+| No stock alerts | **Low Stock Notifications** with automatic threshold triggers |
+| Surplus food waste | **Food Donation** module to manage NGO contributions |
+| No profit tracking | **Profit & Loss Reports** with visual expense vs revenue charts |
+
+SmartDine is designed to be **simple enough for any restaurant owner** to use without technical knowledge, yet **powerful enough** to deliver enterprise-grade intelligence.
+
+---
+
 ## ✨ Features
 
 | Module | Description |
