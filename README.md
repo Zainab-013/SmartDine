@@ -162,37 +162,6 @@ SmartDine/
 
 ---
 
-## 🔐 Environment Variables
-
-### Backend `.env`
-
-```env
-# Flask
-FLASK_DEBUG=True
-FLASK_PORT=5000
-SECRET_KEY=your-secret-key-here
-
-# Database
-DATABASE_URL=postgresql://postgres:password@localhost:5432/smart_restaurant_ai
-
-# CORS
-CORS_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
-
-# Email (Gmail SMTP)
-SMTP_SERVER=smtp.gmail.com
-SMTP_PORT=587
-SMTP_EMAIL=your_email@gmail.com
-SMTP_PASSWORD=your_gmail_app_password
-```
-
-### Frontend `.env`
-
-```env
-VITE_API_BASE_URL=http://127.0.0.1:5000
-```
-
----
-
 ## 📡 API Reference
 
 ### Authentication
